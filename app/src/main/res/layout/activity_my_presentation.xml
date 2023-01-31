@@ -4,22 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MyPresentation">
 
-    <Button
-        android:id="@+id/start_my_presentation_btn"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My presentation"
-        />
-
-    <Button
-        android:id="@+id/start_my_music_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My music"
+        android:text="Je m'appelle Robin"
         />
 
 </LinearLayout>
