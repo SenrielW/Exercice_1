@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Button Presentation
+        // Button Profile
+        var profile = Profile("Robin", 28)
         val buttonParcelable = findViewById<Button>(R.id.my_profile)
         buttonParcelable.setOnClickListener{
-
-            startActivity(intent)
+            val intentProfile = Intent(this, ProfileDetails::class.java)
+            intentProfile.putExtra("profile", profile)
+            startActivity(intentProfile)
         }
 
         // Button Music

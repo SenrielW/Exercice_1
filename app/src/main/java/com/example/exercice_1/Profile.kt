@@ -4,7 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 
 // Implement via profile et non class pour que ça charge bien
-data class Profile(val name:String?, var age:Int): Parcelable{
+data class Profile(var name:String?, var age:Int): Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readInt()
