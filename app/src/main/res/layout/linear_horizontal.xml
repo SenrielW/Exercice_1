@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <Button
         android:id="@+id/icon"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="ICON"
-        />
+        android:layout_marginStart="5dp"
+        android:text="@string/icon" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:orientation="vertical">
 
-    <Button
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Name"
-        />
+        <Button
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/name"
+            tools:ignore="NestedWeights" />
 
-    <Button
-        android:id="@+id/lastname"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="lastname"
-        />
+        <Button
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/lastname" />
     </LinearLayout>
 
 </LinearLayout>
