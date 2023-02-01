@@ -4,22 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    tools:context=".activity.MainActivity">
 
-    <Button
-        android:id="@+id/my_profile"
-        android:layout_width="wrap_content"
+    <Space
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Parcelable -> My profile"
-        />
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/start_my_music_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My music"
-        />
+        android:text="@string/preference"
+        app:backgroundTint="#009688" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/my_profile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            app:backgroundTint="#3F51B5" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/menu"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/start_cgu_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cgu"
+            app:backgroundTint="#673AB7" />
+
+    </LinearLayout>
 
 </LinearLayout>

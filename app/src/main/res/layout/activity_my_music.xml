@@ -4,12 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyMusic">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.music.MyMusic">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mes musiques"
-        />
+        android:text="Mes groupes préférés :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/preferred_group_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/preferred_group_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/preferred_group_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.exercice_1.element.MyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bouton inutile" />
 
 </LinearLayout>

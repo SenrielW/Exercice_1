@@ -1,4 +1,4 @@
-package com.example.exercice_1
+package com.example.exercice_1.data
 
 import android.os.Parcel
 import android.os.Parcelable

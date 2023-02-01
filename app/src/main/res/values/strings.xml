@@ -3,4 +3,11 @@
     <string name="icon">ICON</string>
     <string name="name">Name</string>
     <string name="lastname">lastname</string>
+    <string name="preference">Preference</string>
+    <string name="my_profile">My profile</string>
+    <string name="menu">Menu</string>
+    <string name="cgu">CGU</string>
+    <string name="profile">profile</string>
+    <string name="validate_cgu">Valider les CGU</string>
+    <string name="confirm_cgu">Je confirme avoir lu les CGU</string>
 </resources>
