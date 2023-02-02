@@ -1,4 +1,4 @@
-package com.example.exercice_1.activity.profile
+package com.example.exercice_1.activity
 
 import android.os.Bundle
 import android.widget.TextView

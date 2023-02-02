@@ -6,9 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.exercice_1.R
 import com.example.exercice_1.data.Profile
-import com.example.exercice_1.activity.music.MyMusic
-import com.example.exercice_1.activity.cgu.CguActivity
-import com.example.exercice_1.activity.profile.ProfileDetails
 import com.example.exercice_1.data.MusicGroup
 
 class MainActivity : AppCompatActivity() {

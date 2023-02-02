@@ -1,16 +1,38 @@
-package com.example.exercice_1.activity.cgu
+package com.example.exercice_1.activity
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.exercice_1.R
 
 class CguActivity : AppCompatActivity() {
+    fun confirmDialog(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Confirmation")
+        builder.setMessage("Are you sure you want to ...")
+        builder.setPositiveButton("Yes"){dialog, which ->
+            Toast.makeText(applicationContext, "Followed", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Followed", Toast.LENGTH_LONG).show()
+            finish()
+        }
+        builder.setNegativeButton("No"){dialog, which ->
+            Toast.makeText(applicationContext, "Cancelled", Toast.LENGTH_LONG).show()
+        }
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cgu)
 
         val cguTextView = findViewById<TextView>(R.id.cgu_text)
+
+        findViewById<Button>(R.id.validate_cgu_btn).setOnClickListener {
+            confirmDialog()
+        }
 
         cguTextView.setText("Conditions générales d’utilisation du site internet et des services proposés\n" +
                 "L’utilisation du site https://fr.orson.io implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site https://fr.orson.io sont donc invités à les consulter de manière régulière.\n" +
